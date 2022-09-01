@@ -16,9 +16,9 @@ Javier Bagatoli : Estudiante avanzado de la carrera.
 
 Ariel Mercado : Estudiante avanzado de la carrera.
 
-Franco Gallioti : Abierto a nuevos desafios.
+Franco Galiotti : Abierto a nuevos desafios.
 
-Charly : No supo describirse, dice ser positivo, trabaja en equipo, curioso.
+Carlos Gutierrez : No supo describirse, dice ser positivo, trabaja en equipo, curioso.
 
 
 ### Prototipo de MyPhone Store 
