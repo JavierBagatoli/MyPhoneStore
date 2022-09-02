@@ -8,13 +8,13 @@ MyPhone-Store es una tienda web dedicada a la venta de celulares para todos los 
 
 ## Publico objetivo
 
-La tienda esta dirigida hacia el publico en general, tanto como publico especialzado
+La tienda esta dirigida hacia el publico en general, tanto como publico especializado
 
 ## Integrantes del grupo The Crew:
 
 Javier Bagatoli : Estudiante avanzado de la carrera.
 
-Ariel Mercado : Estudiante avanzado de la carrera.
+Ariel Mercado : Estudiante avanzado de la carrera con interés en las nuevas tecnologías.
 
 Franco Galiotti : Abierto a nuevos desafios.
 
