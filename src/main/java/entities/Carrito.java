@@ -35,15 +35,11 @@ public class Carrito extends Base {
     @Column(name = "descuento")
     private int descuento;
 
-    @ManyToOne(optional = false)
-    @JoinColumn(name = "fk_persona")
-    private Persona persona;
-
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinTable(
             name = "carrito_detalleCarrito",
             joinColumns = @JoinColumn(name = "carrito_id"),
-            inverseJoinColumns = @JoinColumn(name = "detlle_carrito_id")
+            inverseJoinColumns = @JoinColumn(name = "detalle_carrito_id")
     )
     private List<DetalleCarrito> detalleCarritos = new ArrayList<DetalleCarrito>();
 

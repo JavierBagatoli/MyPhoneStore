@@ -6,10 +6,10 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.envers.Audited;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "persona")
@@ -43,5 +43,13 @@ public class Persona extends Base {
 
     @Column(name = "codigoSeguridad")
     private int codigoSeguridad;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinTable(
+            name = "persona_carrito",
+            joinColumns = @JoinColumn(name = "persona_id"),
+            inverseJoinColumns = @JoinColumn(name = "carrito_id")
+    )
+    private List<Carrito> detalleCarritos = new ArrayList<Carrito>();
 
 }
