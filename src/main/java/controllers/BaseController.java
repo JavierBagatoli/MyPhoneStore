@@ -1,4 +1,4 @@
-package config.controllers;
+package controllers;
 
 import entities.Base;
 import org.springframework.data.domain.Page;

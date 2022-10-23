@@ -1,4 +1,4 @@
-package config.controllers;
+package controllers;
 
 import entities.Base;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +16,10 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
     @GetMapping("")
     public ResponseEntity<?> getAll(){
         try {
-            return ResponseEntity.status(HttpStatus.OK).body(service.findAll());
+            return (ResponseEntity<?>) ResponseEntity.status(HttpStatus.OK);
+            //return ResponseEntity.status(HttpStatus.OK).body(service.findAll());
         } catch (Exception e){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Intente mas tarde\"}");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e);
         }
     }
 
@@ -45,7 +46,8 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
         try {
             return ResponseEntity.status(HttpStatus.OK).body(service.save(entity));
         } catch (Exception e){
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("{\"error\":\"Error. Intente mas tarde\"}");
+            System.out.println("texto");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e);
         }
     }
 
