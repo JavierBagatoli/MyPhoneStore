@@ -9,7 +9,6 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
-@
 public class MyPhoneStoreApplication {
 
 	public static void main(String[] args) {
